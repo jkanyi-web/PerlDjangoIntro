@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <a href="{% url 'about_us' %}">About Us</a>
+  <a href="{% url 'blog_posts' %}">Our Blog</a>
+  <a href="{% url 'our_services' %}">Our Services</a>
+
+  <h1>Welcome to Django</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda at, nihil, eaque a fugiat quidem quasi molestias asperiores ea doloribus saepe accusamus animi quis, architecto totam ad vitae commodi quae.</p>
+
+  <img src="{% static 'images/calvo.jpg' %}" alt="Calvo">
+  
+</body>
+</html>
